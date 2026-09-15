@@ -1,0 +1,37 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ---- local environment (not part of the project) ----
+.claude/
+powershell.cmd
+.streamlit/secrets.toml
+
+# ---- data ----
+# raw corpora: 44.8 GiB of third-party data under their own licences; never commit
+data/raw/*
+!data/raw/README.md
+# V4 fragments: train.npz is 132 MiB, above GitHub's 100 MB limit
+# (use Git LFS or distribute separately; manifests in data/metadata/ ARE committed)
+data/processed_v4/*.npz
+
+# ---- bulky archived artefacts (docs and code in archive/ ARE committed) ----
+archive/data/
+archive/checkpoints/
+
+# ---- regenerated on every demo run ----
+demo/outputs/*
+!demo/outputs/README.md

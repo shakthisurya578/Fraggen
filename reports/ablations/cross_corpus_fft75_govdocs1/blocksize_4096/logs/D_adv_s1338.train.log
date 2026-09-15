@@ -1,0 +1,8 @@
+[setup] n_train=36,000  classes=9  aug=True  adv=True  aux=True  contrastive=False
+[train] epoch 1/6 val_acc=0.4700
+[train] epoch 2/6 val_acc=0.7217
+[train] epoch 3/6 val_acc=0.7189
+[train] epoch 4/6 val_acc=0.5119
+[train] epoch 5/6 val_acc=0.7314
+[train] epoch 6/6 val_acc=0.7664
+saved F:\sem 7\CSE4074 - Forensics Analytics\Project\fraggen\checkpoints\blocksize_4096\D_adv_s1338.pt

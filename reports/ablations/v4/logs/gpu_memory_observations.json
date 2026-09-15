@@ -1,0 +1,13 @@
+{
+  "source": "Windows performance counters \\GPU Process Memory(*)\\Dedicated Usage and \\Shared Usage, read with Get-Counter during the run; GPU = NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB",
+  "observations": [
+    {"time": "2026-09-14T23:31:18+05:30", "run": "C_aux_s1337", "pid": 33080, "dedicated_mb": 5533, "shared_mb": 2398, "allocator_conf": "default", "note": "other large VRAM holder: dwm.exe (pid 2112) 787 MB"},
+    {"time": "2026-09-14T23:44:00+05:30", "run": "C_aux_s1337", "pid": 33080, "dedicated_mb": 5214, "shared_mb": 2718, "allocator_conf": "default", "note": "dwm.exe 886 MB"},
+    {"time": "2026-09-15T00:06:58+05:30", "run": "C_aux_s1338", "pid": 20884, "dedicated_mb": 4261, "shared_mb": 78, "allocator_conf": "garbage_collection_threshold:0.6,max_split_size_mb:256", "note": "dwm.exe 905 MB"}
+  ],
+  "epoch_timing": {
+    "B_aug (default allocator)": "trained in 11.2 / 9.9 / 9.7 min for 6 epochs (console log)",
+    "C_aux_s1337 (default allocator, shared-memory spill)": "trained in 55.7 min for 6 epochs (console log)",
+    "C_aux_s1338 (allocator reclaim)": "setup 00:06:43 -> epoch 1 logged 00:08:41 (about 2 min)"
+  }
+}

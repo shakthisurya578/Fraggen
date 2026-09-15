@@ -1,0 +1,58 @@
+# FragGen configuration for the REAL corpora (FFT-75 train / GovDocs1 cross-corpus).
+#
+# Identical to default.yaml except for `classes`: the `encrypted` class is
+# dropped. Neither FFT-75 (scenario 1) nor GovDocs1 contains an encrypted file
+# type -- it exists only in fraggen/data/synthetic.py. Keeping it here would
+# give the classifier a 10th head with zero training and zero test examples.
+# Use default.yaml for the synthetic A/B demo, this one for real-corpus runs.
+seed: 1337
+block_size: 512            # bytes per fragment (512 or 4096)
+
+classes:                   # 9 classes present in BOTH real corpora
+  - txt
+  - csv
+  - html
+  - xml
+  - pdf
+  - jpg
+  - png
+  - gif
+  - zip
+
+model:
+  emb_dim: 32              # byte-embedding dimension (vocab = 256)
+  channels: [64, 128, 256] # 1D-conv stack widths
+  kernel_size: 9
+  proj_dim: 128            # contrastive projection head output
+  dropout: 0.1
+  use_entropy_aux: true    # concat entropy/statistical aux features into the head
+  use_entropy_adversary: true  # gradient-reversal head: don't judge purely by randomness
+
+augment:
+  bit_flip_prob: 0.002     # per-bit flip probability (encoder-noise proxy)
+  byte_noise_prob: 0.01    # fraction of bytes replaced with random values
+  mask_prob: 0.10          # SpecAugment-style contiguous masking (contrastive views)
+  cyclic_shift: true       # random cyclic byte shift
+
+contrastive:
+  enabled: true
+  epochs: 3
+  batch_size: 256
+  lr: 0.001
+  temperature: 0.2
+
+train:
+  epochs: 8
+  batch_size: 256
+  lr: 0.001
+  weight_decay: 0.0001
+  adversary_lambda: 0.3    # weight on entropy-adversary (gradient reversal strength)
+  val_frac: 0.1
+
+reject:
+  target_coverage: 0.9     # keep 90% most-confident predictions, abstain on the rest
+
+paths:
+  data_dir: data
+  ckpt_dir: checkpoints
+  report_dir: reports

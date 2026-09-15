@@ -1,0 +1,21 @@
+{
+  "temperature": 1.0213655233383179,
+  "fitted_on": "data/processed_v4/val.npz",
+  "block_size": 4096,
+  "results": {
+    "in-corpus": {
+      "ece_before": 0.027618391988588165,
+      "ece_after": 0.02898413291358585,
+      "accuracy": 0.902524597666082,
+      "n": 13111,
+      "verdict": "quotable \u2014 confidence may be reported as a probability"
+    },
+    "cross-corpus": {
+      "ece_before": 0.021655963178345523,
+      "ece_after": 0.021918646829714804,
+      "accuracy": 0.8900683437545441,
+      "n": 13754,
+      "verdict": "quotable \u2014 confidence may be reported as a probability"
+    }
+  }
+}

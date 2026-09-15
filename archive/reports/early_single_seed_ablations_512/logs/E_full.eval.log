@@ -1,0 +1,10 @@
+
+==================== FragGen evaluation ====================
+in-corpus accuracy      : 0.7899  (macro-F1 0.7792, entropy ceiling 0.6889)
+cross [        govdocs1] acc: 0.5538  macro-F1 0.4638  GAP +0.2362
+--> HEADLINE mean cross-corpus GAP : +0.2362  (max +0.2362)   [lower is better]
+reject option (cov 0.90) selective acc: 0.8373
+throughput: 1099.85 sec/GB
+============================================================
+
+wrote report F:\sem 7\CSE4074 - Forensics Analytics\Project\fraggen\reports\ablations\E_full.json

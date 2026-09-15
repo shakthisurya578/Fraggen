@@ -1,0 +1,17 @@
+# FragGen V4. Tested with Python 3.11, torch 2.11 (CUDA 12.8), numpy 2.x,
+# scipy 1.17, scikit-learn 1.9, matplotlib 3.11, streamlit 1.63.
+
+# core: data, training, evaluation, inference
+numpy>=1.23
+scipy>=1.9
+scikit-learn>=1.1
+torch>=2.0
+pyyaml>=6.0
+tqdm>=4.64
+matplotlib>=3.6
+
+# interactive demo (demo/streamlit/app.py)
+streamlit>=1.30
+
+# optional: real-data re-encode augmentation for GovDocs1 prep
+pillow>=9.0

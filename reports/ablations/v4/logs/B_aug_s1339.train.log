@@ -1,0 +1,8 @@
+[setup] n_train=61,940  classes=9  aug=True  adv=False  aux=False  contrastive=False
+[train] epoch 1/6 val_acc=0.8521
+[train] epoch 2/6 val_acc=0.9023
+[train] epoch 3/6 val_acc=0.8725
+[train] epoch 4/6 val_acc=0.9075
+[train] epoch 5/6 val_acc=0.9223
+[train] epoch 6/6 val_acc=0.9044
+saved C:\Users\shakthisurya\AppData\Local\Temp\claude\F--sem-7-CSE4074---Forensics-Analytics-Project-fraggen\923508c9-99ad-42d9-92b9-b705c36c1949\scratchpad\ablation_runner\checkpoints\ablations_v4\B_aug_s1339.pt

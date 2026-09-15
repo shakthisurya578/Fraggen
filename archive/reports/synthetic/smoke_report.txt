@@ -1,0 +1,10 @@
+
+===== FragGen smoke test (feature baseline) =====
+in-corpus  [ synthetic-A(in)] acc=0.863 macroF1=0.865 ceiling=0.850
+cross      [     synthetic-B] acc=0.493 macroF1=0.453
+--> cross-corpus GAP = +0.369   (this is the number FragGen shrinks)
+reject@cov0.90: selective_acc=0.905 (vs full 0.863)
+high-entropy-only acc  in=0.775 away=0.489  types=['jpg', 'png', 'gif', 'zip', 'encrypted', 'pdf']
+=================================================
+
+SMOKE TEST PASSED: data + features + metrics + gap + reject all run.

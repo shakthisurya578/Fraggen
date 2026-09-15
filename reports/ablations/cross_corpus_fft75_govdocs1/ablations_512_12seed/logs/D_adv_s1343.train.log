@@ -1,0 +1,8 @@
+[setup] n_train=72,000  classes=9  aug=True  adv=True  aux=True  contrastive=False
+[train] epoch 1/6 val_acc=0.4657
+[train] epoch 2/6 val_acc=0.6793
+[train] epoch 3/6 val_acc=0.7456
+[train] epoch 4/6 val_acc=0.7592
+[train] epoch 5/6 val_acc=0.7639
+[train] epoch 6/6 val_acc=0.7824
+saved F:\sem 7\CSE4074 - Forensics Analytics\Project\fraggen\checkpoints\ablations_gpu\D_adv_s1343.pt

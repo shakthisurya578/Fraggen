@@ -1,0 +1,71 @@
+{
+  "model": "checkpoints/ablations_gpu/A_plain_s1337.pt",
+  "data": "data/processed/govdocs_512_test.npz",
+  "overall_accuracy": 0.5364493695339116,
+  "ece": 0.24154241365437795,
+  "per_class": [
+    {
+      "class": "txt",
+      "precision": 0.7886867088607595,
+      "recall": 0.49845,
+      "n_called": 12640,
+      "n_actual": 20000
+    },
+    {
+      "class": "csv",
+      "precision": 0.6631608470060301,
+      "recall": 0.818166089965398,
+      "n_called": 7131,
+      "n_actual": 5780
+    },
+    {
+      "class": "html",
+      "precision": 0.640175074867542,
+      "recall": 0.8337,
+      "n_called": 26046,
+      "n_actual": 20000
+    },
+    {
+      "class": "xml",
+      "precision": 0.925,
+      "recall": 0.0766767143933685,
+      "n_called": 440,
+      "n_actual": 5308
+    },
+    {
+      "class": "pdf",
+      "precision": 0.4266532393420611,
+      "recall": 0.2542,
+      "n_called": 11916,
+      "n_actual": 20000
+    },
+    {
+      "class": "jpg",
+      "precision": 0.8327624639808623,
+      "recall": 0.76585,
+      "n_called": 18393,
+      "n_actual": 20000
+    },
+    {
+      "class": "png",
+      "precision": 0.03736833305467313,
+      "recall": 0.24682495858641634,
+      "n_called": 11962,
+      "n_actual": 1811
+    },
+    {
+      "class": "gif",
+      "precision": 0.6368613138686131,
+      "recall": 0.33949416342412453,
+      "n_called": 8220,
+      "n_actual": 15420
+    },
+    {
+      "class": "zip",
+      "precision": 0.18855042016806722,
+      "recall": 0.5805929919137466,
+      "n_called": 17136,
+      "n_actual": 5565
+    }
+  ]
+}

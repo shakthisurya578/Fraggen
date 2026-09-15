@@ -1,0 +1,11 @@
+
+==================== FragGen evaluation ====================
+in-corpus accuracy      : 0.8058  (macro-F1 0.8030, entropy ceiling 0.6889)
+cross [        govdocs1] acc: 0.5251  macro-F1 0.4349  GAP +0.2807
+--> HEADLINE mean cross-corpus GAP : +0.2807  (max +0.2807)   [lower is better]
+  [govdocs1] strict 0.5251 | html+xml merged 0.5672 | coarse 0.6691 | excl. pdf/zip containers 0.5621
+reject option (cov 0.90) selective acc: 0.8562
+throughput: 83.06 sec/GB
+============================================================
+
+wrote report F:\sem 7\CSE4074 - Forensics Analytics\Project\fraggen\reports\ablations_gpu\C_aux_s1344.json

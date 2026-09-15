@@ -1,0 +1,32 @@
+{
+  "model": "checkpoints/v4/A_plain_s1337.pt",
+  "split": "data/processed_v4/test.npz",
+  "pdf_fragments_from_govdocs1": 1500,
+  "bytes_verified_against_source": 1500,
+  "byte_mismatches": 0,
+  "source_missing": 0,
+  "files": 86,
+  "by_dominant_region": {
+    "FlateDecode": {
+      "pdf": 542,
+      "jpg": 41,
+      "zip": 308,
+      "gif": 2
+    },
+    "DCTDecode": {
+      "jpg": 156,
+      "pdf": 53,
+      "zip": 26
+    },
+    "other_stream": {
+      "pdf": 201,
+      "txt": 5,
+      "jpg": 7,
+      "gif": 2,
+      "zip": 35
+    },
+    "outside_streams": {
+      "pdf": 122
+    }
+  }
+}

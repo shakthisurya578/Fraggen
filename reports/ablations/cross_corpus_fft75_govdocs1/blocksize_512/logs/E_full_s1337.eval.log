@@ -1,0 +1,11 @@
+
+==================== FragGen evaluation ====================
+in-corpus accuracy      : 0.7111  (macro-F1 0.6923, entropy ceiling 0.6889)
+cross [        govdocs1] acc: 0.4528  macro-F1 0.3896  GAP +0.2583
+--> HEADLINE mean cross-corpus GAP : +0.2583  (max +0.2583)   [lower is better]
+  [govdocs1] strict 0.4528 | html+xml merged 0.4746 | coarse 0.5872 | excl. pdf/zip containers 0.5248
+reject option (cov 0.90) selective acc: 0.7588
+throughput: 83.42 sec/GB
+============================================================
+
+wrote report F:\sem 7\CSE4074 - Forensics Analytics\Project\fraggen\reports\blocksize_512\E_full_s1337.json

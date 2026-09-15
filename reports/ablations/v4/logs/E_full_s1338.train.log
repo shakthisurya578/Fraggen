@@ -1,0 +1,14 @@
+[setup] n_train=61,940  classes=9  aug=True  adv=True  aux=True  contrastive=True
+C:\Users\shakthisurya\AppData\Local\Temp\claude\F--sem-7-CSE4074---Forensics-Analytics-Project-fraggen\923508c9-99ad-42d9-92b9-b705c36c1949\scratchpad\ablation_runner\fraggen\train.py:56: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  tot += float(loss) * len(idx)
+[pretrain] epoch 1/3 loss=2.7477
+[pretrain] epoch 2/3 loss=2.2363
+[pretrain] epoch 3/3 loss=2.1325
+[train] epoch 1/6 val_acc=0.8071
+[train] epoch 2/6 val_acc=0.8747
+[train] epoch 3/6 val_acc=0.7583
+[train] epoch 4/6 val_acc=0.8817
+[train] epoch 5/6 val_acc=0.9025
+[train] epoch 6/6 val_acc=0.9190
+saved C:\Users\shakthisurya\AppData\Local\Temp\claude\F--sem-7-CSE4074---Forensics-Analytics-Project-fraggen\923508c9-99ad-42d9-92b9-b705c36c1949\scratchpad\ablation_runner\checkpoints\ablations_v4\E_full_s1338.pt

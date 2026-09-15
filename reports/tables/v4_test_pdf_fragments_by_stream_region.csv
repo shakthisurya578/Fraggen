@@ -1,0 +1,5 @@
+dominant_region,n_fragments,predicted_txt,predicted_csv,predicted_html,predicted_xml,predicted_pdf,predicted_jpg,predicted_png,predicted_gif,predicted_zip,share_txt,share_csv,share_html,share_xml,share_pdf,share_jpg,share_png,share_gif,share_zip
+FlateDecode,893,0,0,0,0,542,41,0,2,308,0.0000,0.0000,0.0000,0.0000,0.6069,0.0459,0.0000,0.0022,0.3449
+DCTDecode,235,0,0,0,0,53,156,0,0,26,0.0000,0.0000,0.0000,0.0000,0.2255,0.6638,0.0000,0.0000,0.1106
+other_stream,250,5,0,0,0,201,7,0,2,35,0.0200,0.0000,0.0000,0.0000,0.8040,0.0280,0.0000,0.0080,0.1400
+outside_streams,122,0,0,0,0,122,0,0,0,0,0.0000,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000
