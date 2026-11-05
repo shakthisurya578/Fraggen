@@ -7,7 +7,7 @@ fragment by fragment, and votes on a file-level verdict.
 
 `txt · csv · html · xml · pdf · jpg · png · gif · zip`
 
-📄 **[Download the final report and project summary (PDF)](https://github.com/surya-kaiser/Fraggen/releases/tag/v4.0.0)**
+📄 **Final report and project summary (PDF):** [RESULTS_AND_DISCUSSION.pdf](docs/thesis/RESULTS_AND_DISCUSSION.pdf) · [FINAL_PROJECT_SUMMARY.pdf](docs/FINAL_PROJECT_SUMMARY.pdf)
 
 ![pipeline](reports/figures/fig8_pipeline_architecture.png)
 
